@@ -1,0 +1,42 @@
+*{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+div {
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 30px;
+}
+
+h1{
+    text-transform: uppercase;
+    font-family: 'Libre Baskerville', serif;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    width: 100%;
+    border: solid; color: white;
+    border-width: 5px;
+}
+
+#kobe {
+    margin-top: 60px;
+}
+
+.kobe-img {
+    border-color: #F9A01B;
+}
+
+.tortuga-img {
+    height: 450px
+}
+
+.william-img {
+    width: 55%;
+}
