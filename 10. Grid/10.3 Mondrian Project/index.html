@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    .container-center {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      display: grid;
+      height: 748px;
+      width: 748px;
+      gap: 9px;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 20px;
+      background-color: black;
+      border: 10px #4d453c solid;
+    }
+
+    .square {
+      background-color:#F0F1EC;
+    }
+
+    .red {
+      background-color: #D60B00
+    }
+
+    .grey1 {
+      grid-column: span 3;
+      background-color: #3792CB;
+    }
+
+    .grey2 {
+      background-color: #232629;
+      grid-area: 2 / 1 / 4 / 2;
+    }
+
+    .grey3 {
+      grid-area: 2 / 2 / 4 / 4;
+      background-color: crimson;
+    }
+
+     .blue {
+      background-color: #3C1361;
+      grid-area: 2 / 4 / 2 / 4;
+      border-bottom: 10px solid black;
+     }
+
+    .greyBlue {
+      grid-area: 3 / 4 / 5 / 4;
+    } 
+    
+    .grey4 {
+      grid-area: 4 / 1 / 4 / 2;
+      background-color: violet;
+    }
+
+    .yellow {
+      grid-area: 4 / 2 / 4 / 3;
+      background-color: cornflowerblue;
+    }
+
+    .dark {
+      grid-area: 4 / 3 / 4 / 4;
+      background-color: #232629;
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="container-center">
+  <div class="container">
+    <div class="square red"></div>
+    <div class="square grey1"></div>
+    <div class="square grey2"></div>
+    <div class="square grey3"></div>
+    <div class="square blue"></div>
+    <div class="square greyBlue"></div>
+    <div class="square grey4"></div>
+    <div class="square yellow"></div>
+    <div class="square dark"></div>
+</div>
+</body>
+
+</html>
